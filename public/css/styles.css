@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  background: #141120 !important;
+  color: #f3eefc;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #241b3a;
+  padding: 32px 0 18px 0;
+  border-bottom: 2px solid #5d3f8f;
+}
+
+header h1 {
+  width: 85%;
+  max-width: 1300px;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f3eefc;
+}
+
+nav {
+  width: 85%;
+  max-width: 1300px;
+  margin: 18px auto 0 auto;
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #32264d;
+  color: #cdb8ff;
+  text-decoration: none;
+  border: 1px solid #6a4bb0;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  background: #3b2d5a;
+  color: #ffffff;
+}
+
+main {
+  width: 85%;
+  max-width: 1300px;
+  margin: 32px auto;
+}
+
+main h1 {
+  margin: 0 0 24px 0;
+  font-size: 3rem;
+  color: #f3eefc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: #211933 !important;
+  border: 1px solid #5a3f8d;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 0 0 1px rgba(110, 78, 170, 0.15);
+}
+
+.card h2,
+.card h3 {
+  margin: 0 0 18px 0;
+  font-size: 2rem;
+  color: #f3eefc;
+}
+
+.card p {
+  margin: 0 0 14px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e7def8;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+input,
+select {
+  min-width: 220px;
+  padding: 12px 14px;
+  background: #2c2341;
+  color: #f3eefc;
+  border: 1px solid #6a4bb0;
+  border-radius: 10px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #b8add3;
+}
+
+button {
+  padding: 12px 18px;
+  background: #32264d;
+  color: #d6c4ff;
+  border: 1px solid #6a4bb0;
+  border-radius: 10px !important;
+}
+
+button:hover {
+  background: #3b2d5a;
+  color: #ffffff;
+}
+
+.author,
+.author-link {
+  color: #cdb8ff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.author:hover,
+.author-link:hover {
+  color: #ffffff;
+}
+
+footer {
+  margin-top: 48px;
+  padding: 28px 20px;
+  text-align: center;
+  background: #241b3a;
+  border-top: 2px solid #5d3f8f;
+  color: #b8add3;
+  line-height: 1.8;
+}
+
+.modal-content {
+  background: #211933 !important;
+  color: #f3eefc !important;
+  border: 1px solid #5a3f8d !important;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: #4f377d !important; 
+}

@@ -1,0 +1,59 @@
+<%- include('partials/head') %>
+
+<h1>Search Quotes</h1>
+
+<div class="container">
+  <div class="card">
+    <h2>Search by Keyword</h2>
+    <form action="/searchKeyword" method="POST">
+        <input type="text" name="keyword" placeholder="Enter keyword">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Search by Author</h2>
+    <form action="/searchAuthor" method="POST">
+        <select name="authorId">
+          <% authors.forEach(author=>{ %>
+            <option value="<%= author.authorId %>"><%= author.firstName %> <%= author.lastName %></option>
+          <% }) %>
+        </select>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Search by Gender</h2>
+    <form action="/searchGender" method="POST">
+        <select name="gender">
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+        </select>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Search by Category</h2>
+    <form action="/searchCategory" method="POST">
+        <select name="category">
+          <% categories.forEach(category=>{ %>
+            <option value="<%= category.category %>"><%= category.category %></option>
+          <% }) %>
+        </select>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Search by Likes</h2>
+    <form action="/searchLikes" method="POST">
+        <input type="number" name="minLikes" placeholder="Min likes">
+        <input type="number" name="maxLikes" placeholder="Max likes">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

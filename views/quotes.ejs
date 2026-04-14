@@ -1,0 +1,32 @@
+<%- include('partials/head') %>
+
+<h1>Quotes</h1>
+
+<div class="container">
+  <% rows.forEach(row=>{ %>
+    <div class="card">
+      <p href="#">"<%= row.quote %>"</p>
+      <a class="author" id="<%= row.authorId %>">- <%= row.firstName %> <%= row.lastName %></a>
+    </div>
+  <% }) %>
+</div>
+
+<div class="modal fade"  id="authorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Author Information</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <div id="author-info"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%- include('partials/footer') %>
