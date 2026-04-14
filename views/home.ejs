@@ -6,9 +6,12 @@
   <div class="card">
     <h2>Search by Keyword</h2>
     <form action="/searchKeyword" method="POST">
-        <input type="text" name="keyword" placeholder="Enter keyword">
+        <input id="key-input" type="text" name="keyword" placeholder="Enter keyword">
       <button type="submit">Search</button>
     </form>
+  </div>
+  <div id="warning">
+    <p>Keyword must be longer than 3 characters</p>
   </div>
 
   <div class="card">

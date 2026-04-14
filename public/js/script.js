@@ -12,3 +12,13 @@ for (let link of author_links){
         author_info.innerHTML += `<p>${data[0].biography}</p>`;
     });
 }  
+
+document.querySelector('#key-input').addEventListener('input', function(){
+    let keyword = document.querySelector('#key-input').value;
+    if (keyword.length < 3){
+        document.querySelector('#warning').style.display = 'block';
+    }
+    else {
+        document.querySelector('#warning').style.display = 'none';
+    }
+});

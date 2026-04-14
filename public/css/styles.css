@@ -84,6 +84,18 @@ main h1 {
   color: #e7def8;
 }
 
+#warning {
+    background: #d62920;
+    border: 1px solid #d36161;
+    border-radius: 10px;
+}
+
+#warning p{
+    margin: 0;
+    padding: 12px 18px;
+    color: #f3eefc;
+}
+
 form {
   display: flex;
   flex-wrap: wrap;
